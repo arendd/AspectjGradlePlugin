@@ -17,9 +17,9 @@ version = "0.0.1"
 group = "de"
 
 pluginBundle {
-    website = 'http://www.ipk-gatersleben.de/' 
-    vcsUrl = 'https://github.com/' 
-    tags = ['gradle', 'aspectj'] 
+    website = 'https://github.com/arendd/AspectjGradlePlugin' 
+    vcsUrl = 'https://github.com/arendd/AspectjGradlePlugin' 
+    tags = ['gradle', 'aspectj','java'] 
 }
 
 
