@@ -1,0 +1,41 @@
+plugins {
+    id 'java-library'
+    id 'java-gradle-plugin'
+    id 'com.gradle.plugin-publish' version '0.10.0' 
+}
+
+apply plugin: 'groovy'
+
+repositories {
+    jcenter()
+}
+
+//sourceCompatibility = 11
+//targetCompatibility = 11
+
+version = "0.0.1"
+group = "de"
+
+pluginBundle {
+    website = 'http://www.ipk-gatersleben.de/' 
+    vcsUrl = 'https://github.com/' 
+    tags = ['gradle', 'aspectj'] 
+}
+
+
+gradlePlugin {
+    plugins {
+        SimplePlugin {
+            id = 'aspectj.AspectjGradlePlugin'
+            displayName = 'AspectjGradlePlugin' 
+            description = 'This is my first AspectjGradlePlugin'
+            implementationClass = 'aspectj.AspectjGradlePlugin'
+
+        }
+    }
+}	
+
+dependencies {
+	compile 'org.codehaus.groovy:groovy-all:2.5.6'
+ }
+
