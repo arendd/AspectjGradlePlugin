@@ -27,7 +27,7 @@ gradlePlugin {
         SimplePlugin {
             id = 'aspectj.AspectjGradlePlugin'
             displayName = 'AspectjGradlePlugin' 
-            description = 'This is my first AspectjGradlePlugin'
+            description = 'This is Plugin to use AspectJ with Gradle 5'
             implementationClass = 'aspectj.AspectjGradlePlugin'
 
         }
