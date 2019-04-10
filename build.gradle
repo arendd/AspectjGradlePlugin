@@ -1,6 +1,7 @@
 plugins {
+	id 'groovy'
     id 'java-gradle-plugin'
-    id 'com.gradle.plugin-publish' version '0.10.0' 
+    id 'com.gradle.plugin-publish' version '0.10.1' 
 }
 
 apply plugin: 'groovy'
@@ -18,13 +19,13 @@ group = "de"
 pluginBundle {
     website = 'https://github.com/arendd/AspectjGradlePlugin' 
     vcsUrl = 'https://github.com/arendd/AspectjGradlePlugin' 
-    tags = ['gradle', 'aspectj','java'] 
+    tags = ['gradle5','aspectj','java'] 
 }
 
 
 gradlePlugin {
     plugins {
-        SimplePlugin {
+        AspectjGradlePlugin {
             id = 'aspectj.AspectjGradlePlugin'
             displayName = 'AspectjGradlePlugin' 
             description = 'This is Plugin to use AspectJ with Gradle 5'
