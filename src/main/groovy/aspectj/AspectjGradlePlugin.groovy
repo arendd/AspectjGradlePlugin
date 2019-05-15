@@ -20,7 +20,7 @@ import org.gradle.api.tasks.TaskAction
  * @author Mike Noordermeer
  * 
  * Fixed with the help of 
- * author lambovg
+ * @author lambovg
  * 
  */
 class AspectjGradlePlugin implements Plugin<Project> {
