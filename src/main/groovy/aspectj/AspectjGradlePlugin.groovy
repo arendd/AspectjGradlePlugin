@@ -55,7 +55,7 @@ class AspectjGradlePlugin implements Plugin<Project> {
 				def aspectTaskName = namingConventions.getAspectCompileTaskName(projectSourceSet)
 				def javaTaskName = namingConventions.getJavaCompileTaskName(projectSourceSet)
 
-				project.tasks.create(name: aspectTaskName, overwrite: true, description: "Compiles AspectJ Source for ${projectSourceSet.name} source set", type: Ajc) {
+				project.tasks.create(name: aspectTaskName, description: "Compiles AspectJ Source for ${projectSourceSet.name} source set", type: Ajc) {
 					sourceSet = projectSourceSet
 					inputs.files(sourceSet.allJava)
 					//replaced by arendd
