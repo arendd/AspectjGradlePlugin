@@ -20,7 +20,7 @@ pluginBundle {
     website = 'https://github.com/arendd/AspectjGradlePlugin' 
     vcsUrl = 'https://github.com/arendd/AspectjGradlePlugin' 
     tags = ['gradle5','aspectj','java'] 
-	description = 'This is a plugin to use AspectJ with Gradle 5'
+	description = 'This is a plugin to use AspectJ with Gradle 5/6'
 	
 }
 
@@ -30,7 +30,7 @@ gradlePlugin {
         AspectjGradlePlugin {
             id = 'aspectj.AspectjGradlePlugin'
             displayName = 'AspectjGradlePlugin' 
-            description = 'This is a plugin to use AspectJ with Gradle 5'
+            description = 'This is a plugin to use AspectJ with Gradle 5/6'
             implementationClass = 'aspectj.AspectjGradlePlugin'
 
         }
