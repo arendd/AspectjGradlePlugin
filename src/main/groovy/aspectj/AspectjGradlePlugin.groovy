@@ -7,6 +7,7 @@ import org.gradle.api.Project
 import org.gradle.api.file.FileCollection
 import org.gradle.api.logging.LogLevel
 import org.gradle.api.plugins.JavaPlugin
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.SourceSet
 import org.gradle.api.tasks.TaskAction
 
@@ -36,7 +37,7 @@ class AspectjGradlePlugin implements Plugin<Project> {
 				project.configurations.create('ajtools')
 				project.dependencies {
 					ajtools "org.aspectj:aspectjtools:${project.aspectjVersion}"
-					compile "org.aspectj:aspectjrt:${project.aspectjVersion}"
+					implementation "org.aspectj:aspectjrt:${project.aspectjVersion}"
 				}
 			}
 		}
@@ -126,15 +127,21 @@ class AspectjGradlePlugin implements Plugin<Project> {
 
 class Ajc extends DefaultTask {
 
+	@Internal
 	SourceSet sourceSet
 
+	@Internal
 	FileCollection aspectpath
+	@Internal
 	FileCollection ajInpath
 
+	@Internal
 	// ignore or warning
 	String xlint = 'ignore'
 
+	@Internal
 	String maxmem
+	@Internal
 	Map<String, String> additionalAjcArgs
 
 	Ajc() {
