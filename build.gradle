@@ -13,7 +13,7 @@ repositories {
 sourceCompatibility = JavaVersion.VERSION_11
 targetCompatibility = JavaVersion.VERSION_1_8
 
-version = "0.0.7"
+version = "0.0.8"
 group = "de"
 
 pluginBundle {
